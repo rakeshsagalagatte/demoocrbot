@@ -40,7 +40,7 @@ configuration.api_key['Apikey'] = CLOUDMERSIVE_API_KEY
 
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Hi')
+    update.message.reply_text('Hi ' + str(update.message.from_user.full_name))
 
 
 def help(update, context):
